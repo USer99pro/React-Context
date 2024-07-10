@@ -9,3 +9,5 @@ npm i react-router-dom
 npm install -D tailwindcss postcss autoprefixer
 npx tailwindcss init -p
 ```
+### API DummyJson
+[DummyJson](https://dummyjson.com/docs)
