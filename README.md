@@ -4,7 +4,7 @@ npm i react-router-dom
 ```
 
 ### Install tailwindcss
-(https://tailwindcss.com/docs/installation/using-postcss)[Tailwindcss Install]
+[Tailwindcss Install](https://tailwindcss.com/docs/installation/using-postcss)
 ```
 npm install -D tailwindcss postcss autoprefixer
 npx tailwindcss init -p
