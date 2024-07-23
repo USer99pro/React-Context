@@ -3,12 +3,13 @@ import App from "../App";
 import PageOne from "../components/PageOne";
 import PageTwo from "../components/PageTwo";
 import PageThree from "../components/PageTree";
+import ProductList from "../components/ProductList";
 
 
 const router = createBrowserRouter([
     {
         path: "/",
-        element: <App />,
+        element: <ProductList />,
     },
     {
         path: "/1",

@@ -14,7 +14,7 @@ export const ProductProvider = ({ children }) => {
         fetch('https://dummyjson.com/products')
         .then(res => res.json())
         .then(data => {
-            setProduct(data.product);
+            setProduct(data.products);
             setloading(false);
             
         })
@@ -27,7 +27,7 @@ export const ProductProvider = ({ children }) => {
     })
 
     return (
-      <ProContext.Provider value={{product, loading,error}}>
+      <ProContext.Provider value={{product, loading, error}}>
         {children}
       </ProContext.Provider>
     )

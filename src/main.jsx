@@ -1,8 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-// import App from './App.jsx'
-import './index.css'
-import {ProductProvider} from "./context/ProductContext.jsx";
+import './index.css';
+import {ProductProvider} from "./context/ProductContxt.jsx";
 import {RouterProvider } from 'react-router-dom';
 import router from './routes/root.jsx'
 
