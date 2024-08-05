@@ -4,6 +4,7 @@ import PageOne from "../components/PageOne";
 import PageTwo from "../components/PageTwo";
 import PageThree from "../components/PageTree";
 import ProductList from "../components/ProductList";
+import Productdetail from "../components/Productdetail";
 
 
 const router = createBrowserRouter([
@@ -22,6 +23,10 @@ const router = createBrowserRouter([
     {
         path: "/3",
         element: <PageThree />,
+    },
+    {
+        path: "/products/:id",
+        element: <Productdetail />,
     },
 
 
