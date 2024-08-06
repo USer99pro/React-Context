@@ -8,11 +8,11 @@ const ProductList = () => {
     if (loading) return <div className="container mx-auto p-4 "> กำลังโหลด...</div>
     if (error) return <div className="container mx-auto"> (error) </div>
 
-
+4
     return (
         <div className="container mx-auto p-4">
             <h1 className="text-2xl ">รายการสินค้า</h1>
-            <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-2">
+            <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-4">
                 {product.map((product) => (
                     <Link
                         to={`/products/${product.id}`}

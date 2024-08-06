@@ -6,6 +6,7 @@ import PageThree from "../components/PageTree";
 import ProductList from "../components/ProductList";
 import Productdetail from "../components/Productdetail";
 import Navbar from "../components/Navbar";
+import Cart from "../components/Cart";
 
 
 const Layout =({children})=>(
@@ -39,8 +40,8 @@ const router = createBrowserRouter([
         element:<Layout><Productdetail /></Layout> ,
     },
     {
-        path: "/nav",
-        element:<Navbar /> ,
+        path: "/cart",
+        element:<Layout><Cart /></Layout>,
     },
 
 

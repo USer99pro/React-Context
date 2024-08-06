@@ -12,7 +12,7 @@ const Navbar = () => {
     <nav className='bg-blue-400 p-4'>
       <div className="container mx-auto flex justify-between items-center">
         <div className="flex space-x-4 ">
-          <Link to="/" className='text-white text-xl text-bold'>
+          <Link to="/" className='text-white text-xl font-bold'>
             ร้านค้าออนไลน์
           </Link>
           <Link to="/1" className='text-white '>
