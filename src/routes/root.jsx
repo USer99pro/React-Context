@@ -5,28 +5,42 @@ import PageTwo from "../components/PageTwo";
 import PageThree from "../components/PageTree";
 import ProductList from "../components/ProductList";
 import Productdetail from "../components/Productdetail";
+import Navbar from "../components/Navbar";
+
+
+const Layout =({children})=>(
+    <>
+        <Navbar />
+        {children}
+    </>
+   
+)
 
 
 const router = createBrowserRouter([
     {
         path: "/",
-        element: <ProductList />,
+        element: <Layout><ProductList /> </Layout>          
     },
     {
         path: "/1",
-        element: <PageOne />,
+        element: <Layout><PageOne /></Layout>,
     },
     {
         path: "/2",
-        element: <PageTwo />,
+        element: <Layout><PageTwo /></Layout>,
     },
     {
         path: "/3",
-        element: <PageThree />,
+        element:<Layout><PageThree /></Layout> ,
     },
     {
         path: "/products/:id",
-        element: <Productdetail />,
+        element:<Layout><Productdetail /></Layout> ,
+    },
+    {
+        path: "/nav",
+        element:<Navbar /> ,
     },
 
 

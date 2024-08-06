@@ -28,11 +28,11 @@ const Productdetail = () => {
                 <p className='text-bold mb-4 '> รายละเอียด: {myproduct.description}</p>
                 <button onClick={() => addToCart(myproduct)} className='bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded transition-color mb-4'>เพิ่มในตะกร้า</button>
 
-                <div className='bg-gray-100 rounded'>
-                  <h2 className='text-xl mb-2 font-semibold'>รายละเอียด </h2>
-                    <p>เเบรนด์{myproduct.brand}</p>
-                    <p>หมวดหมู่{myproduct.category}</p>
-                    <p>คะเเนน {myproduct.rating}</p>
+                <div className='bg-red-400 rounded'>
+                  <h2 className='text-xl font-semibold p-3'>รายละเอียด </h2>
+                    <p className='p-1'>เเบรนด์{myproduct.brand}</p>
+                    <p className='p-1'>หมวดหมู่{myproduct.category}</p>
+                    <p className='p-1'>คะเเนน {myproduct.rating}</p>
                 </div>
             </div>
             
